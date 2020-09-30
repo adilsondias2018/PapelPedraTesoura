@@ -1,98 +1,149 @@
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+
+html {
+    background: url(./img/bg1.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 2px;
+    grid-template-areas:
+    'cabecalho cabecalho cabecalho'
+    'jagador conteudo computador'      
+    'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
+    'rodape rodape rodape';  
+   
+
 }
 
 header{
     grid-area: cabecalho;
-    background-color: blue;
-
+    
 }
 .topo{
-
     background-color: orange;
+    text-align: center;  
+    opacity: 0.9;
 }
 
 main{
-
     grid-area: conteudo;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items: center;
+    grid-template-columns: 33% 33% 33%;     
     background-image: url();
+    
+}
+#computador{
+
+    grid-area: computador;
+    text-align: center ;
 
 }
 
-
-
-.computador{
-
-    grid-area: computador;
-
+.resultado{
+    grid-area: resultado;
 }
 
 .stylePlay{
 
-    grid-area: jogador;
+    grid-area: jogador;    
 
+}
+#jogador{
+    text-align: center;
 }
 
 footer{
 
     grid-area: rodape;
-
-    background-color:blue;
+    background-color: green;
+    color: white;
+    opacity: 0.5;
     
 }
 
-#pontuacaoComputador{
+#pontuacaoComputador {
+     border-top: rgba(1, 116, 145) 3px solid;
+     color: rgb(1, 116, 145);
 
-    background-color: green;
+}
+
+
+
+#pontuacaoComputador  h3{
+    color: rgb(1, 116, 145);
+    font-size: 2em;
+    text-align: center;   
 
 }
 #pontuacaoJogador{
-
-    background-color: red;
+    
+    border-top:rgb(1, 116, 145) 3px solid;
+    color: rgb(1, 116, 145);
+}
+#pontuacaoJogador h3{
+    color: blue;
+    font-size: 2em;
+    text-align: center;       
 }
 
-#pontuacaoEmpate{
+#pontuacaoEmpate {
+    border-top: red 3px solid;
+    color:rgb(1, 116, 145)   
+}
+ 
+#pontuacaoEmpate h3{
 
-    background-color: blue;
+    color:grey;
+    font-size: 2em;
+    text-align: center; 
+    
 }
  
 
-body {
 
-    display: grid;
-    min-height: 100vh;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100px 350px  50px;
-    grid-gap: 2px;
-    grid-template-areas:
-    'cabecalho cabecalho cabecalho'
-    'jagador conteudo computador'
-    'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
-    'rodape rodape rodape';  
-
-}
 
 .tela_conteudo{
 
+  
+    
+    
+
+}
+
+.elemento{
+
+    text-align: center;
  
    
 
- 
 }
 
-elemento{
-
-    margin: 0 auto;
-    padding: 50px;
-
+img{
+    width: 95%;
+    border-radius: 50%;
+    padding: 3px;  
+    opacity: 0.7;
+    
 }
 
-#resultado{
+.textoResultado{
 
-
+    border-radius: 5%;
+    background-color: white;
+    padding: 5px 20px;
+    border-bottom: red solid 3px;
 }
+   
+
+
 
