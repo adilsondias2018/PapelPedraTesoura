@@ -133,7 +133,129 @@ img{
     padding: 5px 20px;
     border-bottom: red solid 3px;
 }
+
+@media ( max-width: 780px){
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-gap: 2px;
+        grid-template-areas:
+        'cabecalho cabecalho cabecalho'
+        'jagador conteudo computador'      
+        'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
+        'rodape rodape rodape';     
+    
+    }
+
+    main{
+        grid-area: conteudo;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;     
+        background-image: url();    
+        }
+    
+}
+
+@media ( max-width: 680px){
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-gap: 2px;
+        grid-template-areas:
+        'cabecalho cabecalho cabecalho'
+        'jagador conteudo computador'      
+        'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
+        'rodape rodape rodape';     
+    
+    }
+
+    main{
+        grid-area: conteudo;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;     
+        background-image: url();    
+        }
+    
+}
+
+@media ( max-width: 580px){
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-gap: 2px;
+        grid-template-areas:
+        'cabecalho cabecalho cabecalho'
+        'jagador conteudo computador'      
+        'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
+        'rodape rodape rodape';     
+    
+    }
+
+    main{
+        grid-area: conteudo;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;     
+        background-image: url();    
+        }
+    
+}
+@media ( max-width: 480px){
+
+
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-gap: 2px;
+        grid-template-areas:
+        'cabecalho cabecalho cabecalho'
+        'jagador conteudo computador'      
+        'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
+        'rodape rodape rodape';     
+    
+    }
+   
+    main{
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;     
+    background-image: url();    
+    }
+
+
+
+}
    
 
 
 
+@media ( max-width: 380px){
+
+
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 20% 60% 20%;
+        grid-gap: 2px;
+        grid-template-areas:
+        'cabecalho cabecalho cabecalho'
+        'jagador conteudo computador'      
+        'pontuacaoJogador pontuacaoEmpate pontuacaoComputador '
+        'rodape rodape rodape';     
+    
+    }
+    
+
+    main{
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;     
+    background-image: url();    
+    }
+
+
+
+}
